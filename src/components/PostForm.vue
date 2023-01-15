@@ -22,6 +22,7 @@
 <script setup>
 import {reactive} from "vue";
 import axios from "axios";
+import {ElMessage} from 'element-plus';
 
 const loginForm = reactive({
   name: '',
@@ -29,45 +30,31 @@ const loginForm = reactive({
   email: '',
 })
 
-const isFormValid = () => {
-  let count = 0;
-  let isValid = false;
-
-
-  if (loginForm.name.length < 4) {
-   alert("имя слишком короткое")
-  } else {
-    count += 1
-  }
-  if (loginForm.name.length >= 15) {
-   alert("имя слишком большое")
-  } else {
-    count += 1
-  }
-  if (loginForm.phone.length <= 5) {
-   alert("номер телефона очень маленький")
-  } else {
-    count += 1
-  }
-  if (loginForm.phone.length > 11) {
-   alert("номер телефона слишком большой")
-  } else {
-    count += 1
-  }
-  return count === 4;
-
-}
 
 const sendData = () => {
-  if (isFormValid() === true) {
-    axios.post('http://127.0.0.1/api/users', loginForm);
-  } else {
-    console.log('not');
-  }
+  axios.post('http://127.0.0.1/api/users', loginForm).then(r => {
+    const data = r.data;
+    if (typeof data.success !== "undefined" && !data.success) {
+      console.log(data.data[0]);
+      const errorMessages = Object.values(data.data).map(
+          (message, index) => message[index]
+      )
+      const keys = Object.keys(data.data);
+      ElMessage({
+        message: data.data[keys[0]].shift(),
+        type: 'error'
+      })
+    } else {
+      ElMessage({
+        message: 'Congrats, this is a success message.',
+        type: 'success',
+      })
+      loginForm.name = '';
+      loginForm.phone = '';
+      loginForm.email = '';
+    }
+  })
 }
-
-
-
 
 </script>
 
@@ -145,5 +132,4 @@ button[type="submit"] {
   cursor: pointer;
   outline: none;
 }
-
 </style>
