@@ -1,7 +1,8 @@
-# Vue 3 + Vite
-
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Обяснение кода
+В этом проекте я реализовал форму, 
+которая с помощью библиотеки axios отправляет данные post запросом на бэк в проект, 
+test-task-kontur, на бэке пройдёт валидация если что-то будет не так, 
+то будет возвращаться ответ и фронт будет выводить его на экран с помощью библиотеки element-plus.
+Если форма отправилась выйдет сообщение, что всё хорошо и данные из формы сотрутся.
+## Единтсенное окно
+![1](https://user-images.githubusercontent.com/91774585/212557952-4892057b-5d8f-4ebc-9a32-a03092d10d5e.png)
