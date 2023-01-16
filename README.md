@@ -7,7 +7,7 @@
 
 Введите в консоль:
 
-    ` cd ~`
+    `cd ~`
     
     `curl -sL https://deb.nodesource.com/setup_18.x -o nodesource_setup.sh`
     
