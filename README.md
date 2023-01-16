@@ -7,15 +7,15 @@
 
 Введите в консоль:
 
-    ` cd ~
+    ` cd ~`
     
-    curl -sL https://deb.nodesource.com/setup_18.x -o nodesource_setup.sh
+    `curl -sL https://deb.nodesource.com/setup_18.x -o nodesource_setup.sh`
     
-    sudo bash nodesource_setup.sh
+    `sudo bash nodesource_setup.sh`
     
-    sudo apt install nodejs
+    `sudo apt install nodejs`
     
-    sudo apt install npm`
+    `sudo apt install npm`
 
 Нужно будет установить библиотеку axios
 
