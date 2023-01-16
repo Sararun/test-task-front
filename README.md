@@ -1,5 +1,6 @@
 ## Запуск проекта
 Чтобы его запустить надо склонировать репу.
+
    ` git clone https://github.com/Sararun/test-task-front.git`
 Может понадобиться установка nodejs и npm.
 Введите в консоль:
