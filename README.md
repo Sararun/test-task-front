@@ -8,6 +8,10 @@
     sudo bash nodesource_setup.sh
     sudo apt install nodejs
     sudo apt install npm
+Нужно будет установить библиотеку axios
+npm install axios
+И библиотеку element-plus
+npm install element-plus --save
     
 В консоли написать npm run dev.
 ## Работа в программе
