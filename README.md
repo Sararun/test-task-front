@@ -6,10 +6,15 @@
 Может понадобиться установка nodejs и npm.
 
 Введите в консоль:
+
     `cd ~
+    
     curl -sL https://deb.nodesource.com/setup_18.x -o nodesource_setup.sh
+    
     sudo bash nodesource_setup.sh
+    
     sudo apt install nodejs
+    
     sudo apt install npm`
 
 Нужно будет установить библиотеку axios
