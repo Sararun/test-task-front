@@ -2,17 +2,23 @@
 Чтобы его запустить надо склонировать репу.
 
    ` git clone https://github.com/Sararun/test-task-front.git`
+
 Может понадобиться установка nodejs и npm.
+
 Введите в консоль:
     `cd ~
     curl -sL https://deb.nodesource.com/setup_18.x -o nodesource_setup.sh
     sudo bash nodesource_setup.sh
     sudo apt install nodejs
     sudo apt install npm`
+
 Нужно будет установить библиотеку axios
-npm install axios
+
+`npm install axios`
+
 И библиотеку element-plus
-npm install element-plus --save
+
+`npm install element-plus --save`
     
 В консоли написать npm run dev.
 ## Работа в программе
