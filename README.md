@@ -1,21 +1,21 @@
 ## Запуск проекта
 Чтобы его запустить надо склонировать репу.
 
-   ` git clone https://github.com/Sararun/test-task-front.git`
+   git clone https://github.com/Sararun/test-task-front.git
 
 Может понадобиться установка nodejs и npm.
 
 Введите в консоль:
 
-    cd ~
+   cd ~
    
-    curl -sL https://deb.nodesource.com/setup_18.x -o nodesource_setup.sh
+   curl -sL https://deb.nodesource.com/setup_18.x -o nodesource_setup.sh
     
-    sudo bash nodesource_setup.sh
+   sudo bash nodesource_setup.sh
     
-    sudo apt install nodejs
+   sudo apt install nodejs
     
-    sudo apt install npm
+   sudo apt install npm
 
 Нужно будет установить библиотеку axios
 
