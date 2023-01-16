@@ -1,6 +1,15 @@
 ## Запуск проекта
-Чтобы его запустить надо склонировать репу, может понадобиться установка nodejs и npm, но это вам интерпреатор скажет,
-в консоли написать npm run dev.
+Чтобы его запустить надо склонировать репу.
+    git clone https://github.com/Sararun/test-task-front.git
+Может понадобиться установка nodejs и npm.
+Введите в консоль:
+    cd ~
+    curl -sL https://deb.nodesource.com/setup_18.x -o nodesource_setup.sh
+    sudo bash nodesource_setup.sh
+    sudo apt install nodejs
+    sudo apt install npm
+    
+В консоли написать npm run dev.
 ## Работа в программе
 Чтобы форма отправилась надо вписать данные соответсвующие правилам валидации:
 Поле name должно быть: не пустым, строчным, не меьше 3 и не больше 15 символов.
